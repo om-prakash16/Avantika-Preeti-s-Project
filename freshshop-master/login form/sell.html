@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width==, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b010ef03f.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="tiltle">Item Details</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li>Men</li>
+                                <li>Women</li>
+                                <li>kids</li>
+                                <li>Accesories</li>
+                            </ul>
+                        </li>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Product name">
+                    </div>
+                    <div class="input-field">
+                        <input type="date" placeholder="Date of purchasing">
+                    </div>
+                    <div class="input-field" id="nameField">
+                        <input type="number" placeholder="Estimate price">
+                    </div>
+                    <div class="input-field" id="nameField">
+                        <input type="text" placeholder="Condition of product">
+                    </div>
+                    <div class="input-field">
+                        <input type="address" placeholder="Image upload">
+                    </div>
+                <div class="btn">
+                    <button type="button"id="Sell"> <a href="C:\Users\Avantika Mishra\Downloads\new project\freshshop-master\index.html" >Sign up</a></button>
+                  <button type="button"id="Donate" class="disable"> <a href="C:\Users\Avantika Mishra\Downloads\new project\freshshop-master\index.html" >Sign in</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let Sell=document.getElementById("Sell");
+        let Donate=document.getElementById("Donate");
+        let nameField=document.getElementById("nameField");
+        let tiltle=document.getElementById("title");
+         
+        Donate.onclick = function(){
+            nameField.style.maxHeight= "0";
+            title.innerHTML = "Sign in";
+            Sell.classList.add("disable");
+            Donate.classList.remove("disable");
+        }
+        Sell.onclick = function(){
+            nameField.style.maxHeight= "60px";
+            title.innerHTML = "Sign up";
+            Sell.classList.remove("disable");
+            Donate.classList.add("disable");
+        }
+    </script>
+
+    
+</body>
+</html>

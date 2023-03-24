@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width==, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/8b010ef03f.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="tiltle">Donate/Sell Registeration</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-regular fa-user"></i>
+                       
+                        <span class="details">
+                            <select id="clothes-category" name="clothes-category">
+                                <option value="Kids">Kids</option>
+                                  <option value="Men">Men</option>
+                                  <option value="Women">Women</option>
+                                  <option value="Acessories">Acessories</option>
+                               </select></span>
+                    </div>
+                    <br>
+                    <div class="input-field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Product Name">
+                    </div>
+                    <br>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="date" placeholder="Date Of Purchasing">
+                    </div>
+                    <br>
+                    <div class="input-field" id="nameField">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="number" placeholder="Estimate price">
+                    </div>
+                    <br>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="text" placeholder="Condition of an product">
+                    </div>
+                    <br>
+                    <div class="input-field">
+                        
+                        <form action="upload.php" method="post" enctype="multipart/form-data">
+                            <label for="file-upload">Select an image to upload:</label>
+                            <input type="file" id="file-upload" name="file-upload">
+                            <input type="submit" value="Upload Image">
+                          </form>
+                          
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="button"id="Sell">Sell</button>
+                    <div class="dropdown">
+                        <button class="dropbtn">Donate</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let Donate=document.getElementById("Donate");
+        let nameField=document.getElementById("nameField");
+        let tiltle=document.getElementById("title");
+         
+        Doante.onclick = function(){
+            nameField.style.maxHeight= "0";
+            title.innerHTML = "Sign in";
+            Sell.classList.add("disable");
+            Donate.classList.remove("disable");
+        }
+        Sell.onclick = function(){
+            nameField.style.maxHeight= "60px";
+            title.innerHTML = "Sign up";
+            Sell.classList.remove("disable");
+            Donate.classList.add("disable");
+        }
+    </script>
+
+    
+</body>
+</html>
