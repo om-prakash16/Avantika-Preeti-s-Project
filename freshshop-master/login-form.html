@@ -14,30 +14,34 @@
     <div class="container">
         <div class="form-box">
             <h1 id="tiltle">Login</h1>
-            <form>
+            <form action="login.php" method="POST">
                 <div class="input-group">
                     <div class="input-field" id="nameField">
                         <i class="fa-regular fa-user"></i>
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Username" name="username"required>
                     </div>
                     <div class="input-field">
                         <i class="fa-regular fa-envelope"></i>
-                        <input type="email" placeholder="email">
+                        <input type="text" placeholder="Username" name="username" required>
                     </div>
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="password">
+                        <input type="password" placeholder="password" name="password">
                     </div>
                     <p>Forget password <a href="#">Click here!</a></p>
                 </div>
                 <div class="btn">
                     
-                    <button type="button"id="signupbtn" class="disable"> <a href="C:\Users\devik\Downloads\freshshop-master\freshshop-master\registration.html" >Sign up</a></button>
-                  <button type="button"id="signinbtn" class="disable"> <a href="C:\Users\devik\Downloads\freshshop-master\freshshop-master\index.html" >Sign in</a></button>
+                    <button type="button"id="signupbtn" class="disable"> <a href="registration.html" >Sign up</a></button>
+                  <button type="submit"id="signinbtn"  name="signin"> Sign in</button>
                 </div>
             </form>
         </div>
     </div>
+
+
+
+    
     <script>
         let signupbtn=document.getElementById("signupbtn");
         let signinbtn=document.getElementById("signinbtn");
